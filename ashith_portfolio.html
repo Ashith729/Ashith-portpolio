@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO: replace these details with your real information -->
+  <title>Ashith S | AI Researcher & Software Developer</title>
+  <meta name="description" content="Ashith S — PhD researcher in Artificial Intelligence and Software Developer at Bosch. Research, projects, publications, skills and professional experience.">
+  <meta name="keywords" content="Ashith S, Ashith, Artificial Intelligence, AI Researcher, Machine Learning, Software Developer, Bosch, PhD, Automotive AI">
+  <meta name="author" content="Ashith S">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://YOUR-USERNAME.github.io/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ashith S | AI Researcher & Software Developer">
+  <meta property="og:description" content="Personal portfolio of Ashith S — AI researcher and software developer.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://YOUR-USERNAME.github.io/">
+
+  <!-- Person structured data helps search engines understand who this site represents -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ashith S",
+    "url": "https://YOUR-USERNAME.github.io/",
+    "jobTitle": "Software Developer",
+    "description": "Artificial Intelligence researcher and software developer.",
+    "sameAs": [
+      "https://www.linkedin.com/in/YOUR-LINKEDIN/",
+      "https://github.com/YOUR-GITHUB/"
+    ]
+  }
+  </script>
+
+  <style>
+    :root{
+      --navy:#0b2239;
+      --navy2:#102d49;
+      --blue:#1488ff;
+      --light:#f5f9fd;
+      --text:#25364a;
+      --muted:#607080;
+      --white:#ffffff;
+      --line:#e3ebf3;
+      --shadow:0 10px 30px rgba(12,39,67,.08);
+      --radius:14px;
+    }
+
+    *{box-sizing:border-box;scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--text);background:#fff;line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%;display:block}
+
+    .nav{
+      position:sticky;top:0;z-index:100;
+      background:rgba(8,29,49,.96);backdrop-filter:blur(10px);
+      color:#fff;height:64px;
+    }
+    .nav-inner{max-width:1180px;margin:auto;height:100%;display:flex;align-items:center;justify-content:space-between;padding:0 24px}
+    .brand{font-size:25px;font-weight:800;letter-spacing:-.5px}
+    .brand span{color:var(--blue)}
+    .nav-links{display:flex;gap:28px;font-size:14px;font-weight:600}
+    .nav-links a{opacity:.9;padding:22px 0;border-bottom:3px solid transparent}
+    .nav-links a:hover,.nav-links a.active{color:#35a0ff;border-bottom-color:#198cff}
+
+    .hero{
+      min-height:470px;background:
+        linear-gradient(90deg,rgba(7,29,49,.97) 0%,rgba(7,29,49,.92) 40%,rgba(7,29,49,.30) 68%,rgba(7,29,49,.08) 100%),
+        url("profile.jpg") right center/cover no-repeat;
+      color:#fff;display:flex;align-items:center;
+    }
+    .hero-inner{max-width:1180px;width:100%;margin:auto;padding:70px 24px}
+    .eyebrow{font-size:13px;letter-spacing:1.3px;color:#a9bdcf;margin-bottom:12px}
+    .eyebrow span{margin:0 10px;color:#55718a}
+    h1{font-size:58px;line-height:1;margin:0 0 12px;font-weight:850;letter-spacing:-2px}
+    .hero h2{font-size:29px;margin:0 0 8px;font-weight:500}
+    .hero-role{font-size:20px;font-weight:650;margin-bottom:14px}
+    .hero p{max-width:540px;font-size:16px;color:#d7e4ee;margin:0 0 24px}
+    .buttons{display:flex;gap:14px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:9px;padding:12px 22px;border-radius:7px;border:1px solid var(--blue);font-weight:700;font-size:14px}
+    .btn-primary{background:var(--blue);color:#fff}
+    .btn-outline{background:transparent;color:#fff}
+
+    .section{padding:52px 24px}
+    .section.alt{background:var(--light)}
+    .container{max-width:1180px;margin:auto}
+    .section-title{display:flex;align-items:center;gap:12px;margin:0 0 25px;font-size:24px}
+    .section-title:after{content:"";display:block;width:34px;height:3px;background:var(--blue);margin-top:30px;position:absolute}
+    .section-title .icon{color:var(--blue)}
+
+    .about-grid{display:grid;grid-template-columns:1.25fr .9fr .9fr;gap:22px;align-items:stretch}
+    .card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:24px;box-shadow:var(--shadow)}
+    .about-text p{color:#536474;margin-top:0}
+    .info{background:#eef7ff}
+    .info-item{display:flex;gap:13px;margin:14px 0}
+    .info-item .ico{width:28px;color:#1689ff;font-size:20px}
+    .info-item b{display:block;font-size:14px}
+    .info-item small{color:#637386}
+    .quote{display:flex;flex-direction:column;justify-content:center}
+    .quote .bosch{font-size:27px;font-weight:850;letter-spacing:-1px;color:#e3222a}
+    .quote .bosch span{color:#444;margin-right:6px}
+    .quote blockquote{font-style:italic;color:#526173;margin:35px 0 0}
+
+    .skills{display:flex;gap:12px;flex-wrap:wrap}
+    .skill{border:1px solid #dfe9f2;border-radius:22px;padding:9px 16px;background:#fff;font-weight:650;font-size:14px;box-shadow:0 4px 10px rgba(0,0,0,.03)}
+
+    .three-col{display:grid;grid-template-columns:1fr 1fr 1fr;gap:22px}
+    .job h3,.project h3,.education h3{font-size:15px;margin:4px 0}
+    .meta{font-size:13px;color:#6b7b8c;margin-bottom:14px}
+    .job ul{padding-left:18px;color:#526274;font-size:13px}
+    .project{border-bottom:1px solid var(--line);padding:12px 0}
+    .project:last-child{border-bottom:0}
+    .project p{font-size:12px;color:#697889;margin:2px 0}
+    .project a{font-size:11px;color:#0d80e9;font-weight:700}
+    .education{display:flex;gap:14px}
+    .education-icon{font-size:25px;color:#1488ff}
+
+    footer{background:#071d31;color:#fff;padding:18px 24px}
+    .footer-inner{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:20px;align-items:center;font-size:12px}
+    .social{display:flex;gap:20px;font-size:16px}
+    .social a:hover{color:#39a3ff}
+
+    @media(max-width:900px){
+      .nav-links{gap:14px;font-size:12px}
+      .about-grid,.three-col{grid-template-columns:1fr}
+      h1{font-size:45px}
+      .hero{background-position:65% center}
+    }
+    @media(max-width:650px){
+      .nav{height:auto}
+      .nav-inner{padding:12px 16px;align-items:flex-start;gap:10px;flex-direction:column}
+      .nav-links{overflow:auto;width:100%;padding-bottom:3px}
+      .nav-links a{padding:5px 0;white-space:nowrap;border:0}
+      .hero{min-height:560px;background:
+        linear-gradient(180deg,rgba(7,29,49,.92),rgba(7,29,49,.75)),
+        url("profile.jpg") center/cover no-repeat}
+      .hero-inner{padding:55px 20px}
+      h1{font-size:42px}
+      .hero h2{font-size:23px}
+      .section{padding:42px 18px}
+      .footer-inner{flex-direction:column;align-items:flex-start}
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#home">Ashith <span>S</span></a>
+      <div class="nav-links">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="hero-inner">
+      <div class="eyebrow">RESEARCHER <span>|</span> SOFTWARE DEVELOPER <span>|</span> AI ENTHUSIAST</div>
+      <h1>Ashith <span style="color:#168cff">S</span></h1>
+      <h2>PhD in Artificial Intelligence</h2>
+      <div class="hero-role">Software Developer at Bosch</div>
+      <p>Passionate about building intelligent systems, solving real-world problems with AI, and creating impactful software solutions.</p>
+      <div class="buttons">
+        <a class="btn btn-primary" href="#projects">▣ &nbsp; View My Work</a>
+        <a class="btn btn-outline" href="https://www.linkedin.com/in/YOUR-LINKEDIN/" target="_blank" rel="noopener">in &nbsp; LinkedIn</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title"><span class="icon">●</span> About Me</h2>
+      <div class="about-grid">
+        <div class="card about-text">
+          <p>I am Ashith S, currently pursuing my PhD in Artificial Intelligence. I work as a Software Developer at Bosch, where I focus on building innovative software solutions that make a real impact.</p>
+          <p>My interests lie in machine learning, deep learning, embedded AI, automotive applications, and AI-driven solutions. I enjoy learning new technologies, solving challenging problems, and contributing to the technology community.</p>
+          <p><strong>Email:</strong> YOUR-EMAIL@example.com</p>
+          <p><strong>Location:</strong> India</p>
+        </div>
+
+        <div class="card info">
+          <h3>🎓 Quick Info</h3>
+          <div class="info-item"><div class="ico">🧠</div><div><b>PhD</b><small>Artificial Intelligence</small></div></div>
+          <div class="info-item"><div class="ico">💼</div><div><b>Current Role</b><small>Software Developer</small></div></div>
+          <div class="info-item"><div class="ico">◆</div><div><b>Focus Areas</b><small>Machine Learning, Embedded AI, Automotive AI</small></div></div>
+          <div class="info-item"><div class="ico">⌘</div><div><b>Programming</b><small>Python, C/C++, AI/ML</small></div></div>
+        </div>
+
+        <div class="card quote">
+          <div class="bosch"><span>◉</span> BOSCH</div>
+          <blockquote>“Technology is best when it brings people together.”</blockquote>
+          <small>— Matt Mullenweg</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="research">
+    <div class="container">
+      <h2 class="section-title"><span class="icon">✦</span> Research</h2>
+      <div class="card">
+        <h3>Artificial Intelligence & Embedded Automotive Applications</h3>
+        <p>Research interests include TinyML, predictive diagnostics, machine learning for embedded systems, AI-driven automotive features, and efficient deployment of intelligent models on resource-constrained platforms.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <div class="container">
+      <h2 class="section-title"><span class="icon">⚙</span> Skills</h2>
+      <div class="skills">
+        <span class="skill">🐍 Python</span>
+        <span class="skill">🧠 Machine Learning</span>
+        <span class="skill">✦ Deep Learning</span>
+        <span class="skill">▥ Data Analysis</span>
+        <span class="skill">TensorFlow</span>
+        <span class="skill">PyTorch</span>
+        <span class="skill">Linux</span>
+        <span class="skill">Git & GitHub</span>
+        <span class="skill">C/C++</span>
+        <span class="skill">Embedded Systems</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="experience">
+    <div class="container">
+      <h2 class="section-title"><span class="icon">▣</span> Experience</h2>
+      <div class="card job">
+        <h3>Software Developer — Bosch</h3>
+        <div class="meta">2022 – Present &nbsp; | &nbsp; India</div>
+        <ul>
+          <li>Developing and maintaining software solutions for automotive and industrial applications.</li>
+          <li>Working with Python, AI/ML, and modern development frameworks.</li>
+          <li>Collaborating with cross-functional teams to deliver high-quality products.</li>
+          <li>Exploring AI/ML applications for embedded and automotive systems.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title"><span class="icon">&lt;/&gt;</span> Featured Projects</h2>
+      <div class="three-col">
+        <div class="card project">
+          <h3>AI Image Classification</h3>
+          <p>Deep learning model for image classification using CNNs.</p>
+          <a href="#">View Project →</a>
+        </div>
+        <div class="card project">
+          <h3>Smart Recommendation System</h3>
+          <p>Recommendation engine using machine learning techniques.</p>
+          <a href="#">View Project →</a>
+        </div>
+        <div class="card project">
+          <h3>Embedded AI / TinyML Prototype</h3>
+          <p>Exploring lightweight ML inference for resource-constrained embedded systems.</p>
+          <a href="#">View Project →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="publications">
+    <div class="container">
+      <h2 class="section-title"><span class="icon">🎓</span> Education & Publications</h2>
+      <div class="three-col">
+        <div class="card education">
+          <div class="education-icon">🎓</div>
+          <div><h3>PhD in Artificial Intelligence</h3><div class="meta">Ongoing</div><p>Researching advanced AI techniques and real-world applications.</p></div>
+        </div>
+        <div class="card education">
+          <div class="education-icon">📄</div>
+          <div><h3>Publications</h3><p>Research papers in Artificial Intelligence, Machine Learning and embedded AI.</p><a class="btn btn-outline" style="color:#0d80e9;padding:8px 0;border:0" href="#">View Publications →</a></div>
+        </div>
+        <div class="card education">
+          <div class="education-icon">🏆</div>
+          <div><h3>Achievements</h3><p>Add awards, patents, certifications, conference presentations or other professional achievements here.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title"><span class="icon">✉</span> Contact</h2>
+      <div class="card">
+        <h3>Let's connect</h3>
+        <p>Email: <a style="color:#0d80e9" href="mailto:YOUR-EMAIL@example.com">YOUR-EMAIL@example.com</a></p>
+        <p>LinkedIn: <a style="color:#0d80e9" href="https://www.linkedin.com/in/YOUR-LINKEDIN/" target="_blank" rel="noopener">linkedin.com/in/YOUR-LINKEDIN</a></p>
+        <p>GitHub: <a style="color:#0d80e9" href="https://github.com/YOUR-GITHUB/" target="_blank" rel="noopener">github.com/YOUR-GITHUB</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div>© 2026 Ashith S. All rights reserved.</div>
+      <div class="social">
+        <a href="https://www.linkedin.com/in/YOUR-LINKEDIN/" target="_blank" rel="noopener">in</a>
+        <a href="https://github.com/YOUR-GITHUB/" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:YOUR-EMAIL@example.com">✉</a>
+        <a href="#home">↑ Back to top</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
